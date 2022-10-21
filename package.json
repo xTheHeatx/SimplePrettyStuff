@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/xTheHeatx/SimplePrettyStuff/issues"
   },
-  "homepage": "https://github.com/xTheHeatx/SimplePrettyStuff#readme"
+  "homepage": "https://github.com/xTheHeatx/SimplePrettyStuff#readme",
+  "dependencies": {
+    "swiper": "^8.4.4"
+  }
 }

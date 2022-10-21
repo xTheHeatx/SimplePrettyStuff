@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Nice Day</title>
 </head>
@@ -12,17 +13,51 @@
     
         <header class="header">
             <div class="header__wrapper">
-                <a class="header__logo-link" href="/index.html">
-                    <img class="header__logo-img" src="./src/img/logo.png" alt="" srcset="">
-                </a>
+                <div class="header__link-block">
+                    <a href="/index.html" class="header__link">My designs</a>
+                    <a href="/index.html" class="header__link">About me</a>
+                </div>
             </div>
         </header>
     
-        <section class="slider">
-            <div class="slider__wrapper">
-                <button class="slider__button button"></button>
+        <section class="main-container">
+            <div class="main-container__wrapper">
+                <h2 class="main-container__title">MY DESIGNS</h2>
+                <div class="swiper slider slider_main">
+                    <div class="swiper-wrapper slider__wrapper">
+
+
+                        <div class="swiper-slide slider__item">
+                            <a href="https://xtheheatx.github.io/cinemaPlace/" class="slider__link">
+                                <img src="./src/img/sky.jpg" alt="" class="slider__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="https://xtheheatx.github.io/cinemaPlace/" class="slider__link">
+                                <img src="./src/img/cineon.png" alt="" class="slider__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="https://xtheheatx.github.io/cinemaPlace/" class="slider__link">
+                                <img src="./src/img/skyClouds.jpg" alt="" class="slider__img">
+                            </a>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+
+                <!-- <button class="main-container__button button"></button> -->
             </div>
         </section>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__copyright">Powered by medlclno</div>
+            </div>
+        </footer>
+    <script type="module" src="./src/libs/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
 </body>
 </html>
