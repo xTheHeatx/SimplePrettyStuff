@@ -1,0 +1,33 @@
+
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Open Sans;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: url("/src/img/sky.jpg");
+    background-size:cover;
+    backdrop-filter: blur(5px);
+    
+   
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.hide{
+    display: none;
+    counter-reset: 1;
+}
