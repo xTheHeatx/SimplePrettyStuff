@@ -3,7 +3,7 @@
 const sliderMain = new Swiper('.slider_main', {
     freeMode: true,
     centeredSlides: false,
-    mousewheel: true,
+    mousewheel: false,
     slidesPerView: 2,
 
 
