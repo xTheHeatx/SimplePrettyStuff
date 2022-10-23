@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -13,14 +13,15 @@ html {
 }
 
 body {
+  height: 100%;
+  z-index: 0;
   display: flex;
   flex-direction: column;
-  background: url(/src/img/sky.jpg);
+  background: url(/src/img/bg-1.png);
   background-size: cover;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: contrast(120%);
-          backdrop-filter: contrast(120%);
+  background-repeat: no-repeat;
+  background-size: 170%;
+  transition: all 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 
 a {
@@ -32,7 +33,6 @@ a {
 }
 
 .header {
-  padding: 10px 5px 10px 5px;
   display: flex;
 }
 .header__wrapper {
@@ -41,8 +41,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: seashell;
-  border-radius: 10px;
+  background: #fff7f0;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
@@ -55,10 +54,10 @@ a {
 .header__link {
   margin-right: 50px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(82, 42, 7);
   letter-spacing: 1px;
-  transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
 }
 .header__link:hover {
   transform: scale(1.2);
@@ -66,21 +65,16 @@ a {
 }
 
 .main-container {
-  padding: 0px 5px 0px 5px;
+  margin: 20px 50px 20px 50px;
   display: flex;
 }
 .main-container__wrapper {
-  padding: 350px 0px 10px 0px;
+  padding: 160px 0 10px 0;
   width: 100%;
-  height: 1400px;
+  height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 .main-container__title {
   margin: 0 0 100px 0;
@@ -99,32 +93,50 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  overflow: visible;
 }
 .slider__wrapper {
   height: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important !important;
+  transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important !important;
 }
 .slider__item {
-  margin: 50px;
-  height: 394px !important;
-  width: 700px !important;
+  z-index: 2;
+  margin: 30px;
+  height: 200px !important;
+  width: 350px !important;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
-  transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
 }
 .slider__item:hover {
   transform: scale(1.2);
-  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 300px rgba(255, 192, 150, 0.7);
 }
 .slider__img {
   position: absolute;
-  width: 100%;
+  width: 105%;
   background-size: contain;
   transform: scale(1.3);
+}
+
+.slider2 {
+  position: absolute;
+  margin-top: 40%;
+  width: 100%;
+}
+.slider2__wrapper {
+  padding-top: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/src/img/bg.png);
+  background-size: cover;
+  background-position-x: 50%;
 }
 
 .button {
@@ -141,7 +153,10 @@ a {
 }
 
 .footer {
-  padding: 10px 5px 10px 5px;
+  position: absolute;
+  width: 100%;
+  margin-top: 100%;
+  z-index: 3;
 }
 .footer__wrapper {
   height: 150px;
@@ -149,14 +164,13 @@ a {
   align-items: center;
   justify-content: center;
   background: seashell;
-  border-radius: 10px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
 }
 .footer__copyright {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.7rem;
   color: rgb(82, 42, 7);
   letter-spacing: 2px;
 }/*# sourceMappingURL=styles.css.map */

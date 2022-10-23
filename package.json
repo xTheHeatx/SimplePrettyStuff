@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/xTheHeatx/SimplePrettyStuff#readme",
   "dependencies": {
+    "gsap": "^3.11.3",
     "swiper": "^8.4.4"
   }
 }
