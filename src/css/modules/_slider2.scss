@@ -1,25 +1,25 @@
 .slider2 {
-    position: absolute;
-    margin-top: 40%;
     width: 100%;
-    
-    
+    margin-top: -300px;
+    transition: $transition3;
     
     
     &__wrapper {
-        padding-top: 500px;
+       
         
         width: 100%;
-        // height: 1000px;
+        height: 1500px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
         background: url(/src/img/bg.png);
 
         background-size:cover;
-    background-position-x: 50%;
+        background-position-x: 50%;
+        
 
     
     }
