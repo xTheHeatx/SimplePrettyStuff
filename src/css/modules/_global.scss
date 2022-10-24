@@ -5,6 +5,7 @@ $title-color-3: rgb(255, 255, 255);
 $transition:all 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950) !important;
 $transition2:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750)  !important;
 $transition3:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750)  !important;
+$transition4:all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750) !important;
 
 
 *{
@@ -28,6 +29,7 @@ body{
     z-index: 0;
     
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
