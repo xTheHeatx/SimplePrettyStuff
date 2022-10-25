@@ -4,6 +4,7 @@
 * {
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 html {
@@ -31,7 +32,7 @@ a {
   z-index: 3;
 }
 .header__wrapper {
-  height: 90px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,8 +46,9 @@ a {
 }
 .header__link {
   margin: 0 25px 0 25px;
+  max-width: 150px;
   text-align: center;
-  font-size: calc((100vw - 480px) / 800 * 8 + 12px);
+  font-size: calc((100vw - 480px) / 1440 * 8 + 10px);
   line-height: 1.5rem;
   color: rgb(82, 42, 7);
   letter-spacing: 1px;
@@ -84,7 +86,6 @@ a {
 .slider {
   margin: 150px 0 150px 0;
   height: 550px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -14,7 +14,7 @@ $transition4:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) !important;
 *{
     padding: 0;
     margin: 0;
-
+    width: 100%;
 }
 
 html{
@@ -28,6 +28,7 @@ html{
 body{
 
     z-index: 0;
+    
     
     display: flex;
     justify-content: center;

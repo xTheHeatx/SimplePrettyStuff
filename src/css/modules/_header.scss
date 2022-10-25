@@ -4,7 +4,7 @@
     
     &__wrapper {
         
-        height: 90px;
+        height: 75px;
 
         display: flex;
         align-items: center;
@@ -28,9 +28,10 @@
    &__link{
 
         margin: 0 25px 0 25px;
+        max-width: 150px;
 
         text-align: center;
-        font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12px);
+        font-size: calc( (100vw - 480px)/(1920 - 480) * (24 - 16) + 10px);
         line-height: 1.5rem;
         color: $title-color-2;
         letter-spacing: 1px;
