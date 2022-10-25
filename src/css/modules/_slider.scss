@@ -2,10 +2,12 @@
     z-index: 0;
     
     display: flex;
+    flex-direction: column;
 
     background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
-    // background-size: cover;
-
+    background-position-x: -100px;
+    
+    background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 3000px);
     
 
     transition: $transition4;
@@ -15,14 +17,15 @@
         
 
         
-        width: 100%;
+        
         
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         
         
-
+overflow: hidden;
         
     }
 
@@ -46,7 +49,7 @@
     margin: 150px 0 150px 0 ;
     
     height: 550px;
-    width: 90%;
+    
     
     
     display: flex;
@@ -108,7 +111,7 @@
         height: 200px !important;
         width: 350px !important;
 
-        background-image: url(/src/img/cineon.png);
+        background-image: url('https://drive.google.com/uc?export=view&id=1-t3nX4dh0ZuJ2-TQIm7L7AYz41_XGk5r');
         background-size: 200%;
 
         border-radius: 10px;
