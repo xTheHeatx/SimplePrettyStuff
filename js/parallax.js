@@ -31,14 +31,14 @@ addEventListener('mousemove', pos, false);
 
 
 
-let sliderImg = document.getElementById('2')
+// let sliderImg = document.getElementById('2')
 
-sliderImg.addEventListener('mousemove', pos1, false);
+// sliderImg.addEventListener('mousemove', pos1, false);
 
-function pos1(e) {
+// function pos1(e) {
 
-    sliderImg.setAttribute("style", `background-position-x: calc(-${e.pageX}px / 8); background-position-y: calc(-${e.pageY}px / 8);`)
-}
+//     sliderImg.setAttribute("style", `background-position-x: calc(-${e.pageX}px / 8); background-position-y: calc(-${e.pageY}px / 8);`)
+// }
 
 
 

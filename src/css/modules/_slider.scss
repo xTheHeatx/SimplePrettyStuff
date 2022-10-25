@@ -105,7 +105,28 @@ overflow: hidden;
     }
 
 
-    &__link{
+    &__link-1{
+
+
+        height: 200px !important;
+        width: 350px !important;
+
+        background-image: url('https://drive.google.com/uc?export=view&id=1-tyc_XtkUswyqYHlFGXYZ6raN_fqYx6R');
+        background-size: 200%;
+
+        border-radius: 10px;
+
+        transition: $transition3;
+
+        &:hover{
+            background-size: 110%;
+            
+        }
+        
+        
+    }
+    
+    &__link-2{
 
 
         height: 200px !important;
@@ -125,6 +146,31 @@ overflow: hidden;
         
         
     }
+
+    &__link-3{
+
+
+        height: 200px !important;
+        width: 350px !important;
+
+        background-image: url('https://drive.google.com/uc?export=view&id=1-tZT16zYOdaSTgFdoAD2LnBGhLbUph98');
+        background-size: 200%;
+
+        border-radius: 10px;
+
+        transition: $transition3;
+
+        &:hover{
+            background-size: 110%;
+            
+        }
+        
+        
+    }
+
+
+
+
     
     &__img{
 
