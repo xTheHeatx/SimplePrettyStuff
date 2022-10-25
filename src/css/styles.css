@@ -84,6 +84,7 @@ a {
 .slider {
   margin: 150px 0 150px 0;
   height: 550px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,10 +146,6 @@ a {
 }
 .slider__link-3:hover {
   background-size: 110%;
-}
-.slider__img {
-  position: absolute;
-  width: 150%;
 }
 
 .slider2 {
