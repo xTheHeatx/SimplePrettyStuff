@@ -1,6 +1,7 @@
 .clouds{
-   
- 
+
+    position: relative;
+
 }
 
 
@@ -8,7 +9,7 @@
     z-index: 1;
 
     position: absolute;
-    top: 350px;
+    top: 50px;
     right: 400px;
 
     
@@ -17,7 +18,7 @@
 
     transition: $transition5;
     
-    animation: cloud-1-Move 100s infinite linear;
+    animation: cloud-1-Move 70s infinite linear;
     @keyframes cloud-1-Move {
         from {right: 700px; }
         50% {right: 500px; }
@@ -30,20 +31,20 @@
     z-index: 1;
 
     position: absolute;
-    top: 300px;
+    top: 0px;
     right: 400px;
 
     
-    scale: 0.5;
+    scale: 0.6;
 
 
     transition: $transition5;
 
-    animation: cloud-2-Move 100s infinite linear;
+    animation: cloud-2-Move 70s infinite linear;
     @keyframes cloud-2-Move {
-        from {right: 100px; }
+        from {right: -80px; }
         50% {right: -200px; }
-        to {right: 100px; }
+        to {right: -80px; }
     }
     
 }
@@ -52,7 +53,7 @@
     z-index: 1;
 
     position: absolute;
-    top: 300px;
+    top: 0px;
     right: 400px;
 
     
@@ -61,7 +62,7 @@
 
     transition: $transition5;
 
-    animation: cloud-3-Move 100s infinite linear;
+    animation: cloud-3-Move 70s infinite linear;
     @keyframes cloud-3-Move {
         from {right: -700px; }
         50% {right: -500px; }
@@ -74,16 +75,16 @@
     z-index: 1;
 
     position: absolute;
-    top: 400px;
+    top: 50px;
     right: 400px;
 
     
-    scale: 0.9;
+    scale: 0.8;
 
 
     transition: $transition5;
 
-    animation: cloud-4-Move 100s infinite linear;
+    animation: cloud-4-Move 70s infinite linear;
     @keyframes cloud-4-Move {
         from {right: -600px; }
         50% {right: -500px; }
@@ -96,7 +97,7 @@
     z-index: 1;
 
     position: absolute;
-    top: 400px;
+    top: 0px;
     right: 400px;
 
     
@@ -105,7 +106,7 @@
 
     transition: $transition5;
     
-    animation: cloud-5-Move 100s infinite linear;
+    animation: cloud-5-Move 70s infinite linear;
     @keyframes cloud-5-Move {
         from {right: 300px; }
         50% {right: 350px; }
@@ -118,7 +119,7 @@
     z-index: 1;
 
     position: absolute;
-    top: 400px;
+    top: 0px;
     right: 400px;
 
     
@@ -127,7 +128,7 @@
 
     transition: $transition5;
 
-    animation: cloud-6-Move 100s infinite linear;
+    animation: cloud-6-Move 70s infinite linear;
     @keyframes cloud-6-Move {
         from {right: -600px; }
         50% {right: -500px; }
@@ -141,7 +142,7 @@
     z-index: 1;
 
     position: absolute;
-    top: 400px;
+    top: 0px;
     right: 400px;
 
     
@@ -151,7 +152,7 @@
 
     transition: $transition5;
 
-    animation: cloud-7-Move 100s infinite linear;
+    animation: cloud-7-Move 70s infinite linear;
     @keyframes cloud-7-Move {
         from {right: 600px; }
         50% {right: 550px; }
