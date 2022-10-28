@@ -10,7 +10,7 @@ import swiper from "./swiper.js"
 
 parallaxScroll('.main-container')
 
-parallaxMouseMove('.main-container', 6)
+parallaxMouseMove('.main-container', 10)
 
 parallaxScrollDIV('.cloud-1')
 parallaxScrollDIV('.cloud-2')

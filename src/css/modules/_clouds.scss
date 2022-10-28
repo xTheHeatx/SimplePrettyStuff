@@ -2,16 +2,20 @@
 
     position: relative;
     z-index: 3;
+    filter: brightness(0.97);
 
 }
 
+
+$scale3D-low: scale3d(0.9, 0.9, 0.9);
+$scale3D-hi: scale3d(1.2, 1.2, 1.2);
 
 .cloud-1{
     z-index: 1;
 
     position: absolute;
     top: 50px;
-    right: 400px;
+    right: 700px;
 
     
     scale: 0.5;
@@ -21,9 +25,9 @@
     
     animation: cloud-1-Move 30s infinite linear;
     @keyframes cloud-1-Move {
-        from {right: 700px; }
-        50% {right: 500px; }
-        to {right: 700px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
     
 }
@@ -33,7 +37,7 @@
 
     position: absolute;
     top: 0px;
-    right: 400px;
+    right: -100px;
 
     scale: 0.6;
    
@@ -42,12 +46,18 @@
     transition: $transition5;
 
     animation: cloud-2-Move 30s infinite linear;
+    // @keyframes cloud-2-Move {
+    //     from {right: -100px; transform:scale(1);}
+    //     50% {right: -200px;transform:scale(1.1); }
+    //     to {right: -100px; transform:scale(1);}
+    // }
     @keyframes cloud-2-Move {
-        from {right: -100px; }
-        50% {right: -200px; }
-        to {right: -100px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
     
+
 }
 
 .cloud-3{
@@ -55,7 +65,7 @@
 
     position: absolute;
     top: 0px;
-    right: 400px;
+    right: -700px;
 
     
     scale: 0.5;
@@ -64,12 +74,18 @@
     transition: $transition5;
 
     animation: cloud-3-Move 30s infinite linear;
+    // @keyframes cloud-3-Move {
+    //     from {right: -700px; transform:scale(1);}
+    //     50% {right: -500px; transform:scale(1.1);}
+    //     to {right: -700px; transform:scale(1);}
+    // }
     @keyframes cloud-3-Move {
-        from {right: -700px; }
-        50% {right: -500px; }
-        to {right: -700px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
     
+
 }
 
 .cloud-4{
@@ -77,7 +93,7 @@
 
     position: absolute;
     top: 50px;
-    right: 400px;
+    right: -600px;
 
     
     scale: 0.8;
@@ -86,12 +102,18 @@
     transition: $transition5;
 
     animation: cloud-4-Move 30s infinite linear;
+    // @keyframes cloud-4-Move {
+    //     from {right: -600px; transform:scale(1);}
+    //     50% {right: -500px; transform:scale(1.1);}
+    //     to {right: -600px;transform:scale(1); }
+    // }
     @keyframes cloud-4-Move {
-        from {right: -600px; }
-        50% {right: -500px; }
-        to {right: -600px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
     
+
 }
 
 .cloud-5{
@@ -99,7 +121,7 @@
 
     position: absolute;
     top: 0px;
-    right: 400px;
+    right: 300px;
 
     
     scale: 1;
@@ -108,11 +130,18 @@
     transition: $transition5;
     
     animation: cloud-5-Move 30s infinite linear;
+    // @keyframes cloud-5-Move {
+    //     from {right: 300px; transform:scale(1);}
+    //     50% {right: 350px; transform:scale(1.1);}
+    //     to {right: 300px; transform:scale(1);}
+    // }
+
     @keyframes cloud-5-Move {
-        from {right: 300px; }
-        50% {right: 350px; }
-        to {right: 300px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
+    
     
 }
 
@@ -121,7 +150,7 @@
 
     position: absolute;
     top: 40px;
-    right: 400px;
+    right: -600px;
 
     
     scale: 0.7;
@@ -130,11 +159,18 @@
     transition: $transition5;
 
     animation: cloud-6-Move 30s infinite linear;
+    // @keyframes cloud-6-Move {
+    //     from {right: -600px; transform:scale(1);}
+    //     50% {right: -500px; transform:scale(1.1);}
+    //     to {right: -600px; transform:scale(1);}
+    // }
+
     @keyframes cloud-6-Move {
-        from {right: -600px; }
-        50% {right: -500px; }
-        to {right: -600px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
+    
     
 }
 
@@ -144,7 +180,7 @@
 
     position: absolute;
     top: 20px;
-    right: 400px;
+    right: 700px;
 
     
     scale: 0.7;
@@ -154,11 +190,18 @@
     transition: $transition5;
 
     animation: cloud-7-Move 30s infinite linear;
+    // @keyframes cloud-7-Move {
+    //     from {right: 700px; transform:scale(1);}
+    //     50% {right: 650px; transform:scale(1.1);}
+    //     to {right: 700px; transform:scale(1);}
+    // }
+
     @keyframes cloud-7-Move {
-        from {right: 700px; }
-        50% {right: 650px; }
-        to {right: 700px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
+    
     
 }
 
@@ -167,7 +210,7 @@
 
     position: absolute;
     top: 0px;
-    right: 400px;
+    right: 100px;
 
     scale: 0.6;
    
@@ -176,10 +219,16 @@
     transition: $transition5;
 
     animation: cloud-8-Move 30s infinite linear;
+    // @keyframes cloud-8-Move {
+    //     from {right: 100px; transform:scale(1);}
+    //     50% {right: 200px; transform:scale(1.1);}
+    //     to {right: 100px; transform:scale(1);}
+    // }
+    
     @keyframes cloud-8-Move {
-        from {right: 100px; }
-        50% {right: 200px; }
-        to {right: 100px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
     
 }
@@ -189,7 +238,7 @@
 
     position: absolute;
     top: 0px;
-    right: 400px;
+    right: 900px;
 
     scale: 0.6;
    
@@ -198,10 +247,17 @@
     transition: $transition5;
 
     animation: cloud-9-Move 30s infinite linear;
+    // @keyframes cloud-9-Move {
+    //     from {right: 900px; transform:scale(1);}
+    //     50% {right: 850px; transform:scale(1.1);}
+    //     to {right: 900px; transform:scale(1);}
+    // }
+    
+
     @keyframes cloud-9-Move {
-        from {right: 900px; }
-        50% {right: 850px; }
-        to {right: 900px; }
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
     }
     
 }
