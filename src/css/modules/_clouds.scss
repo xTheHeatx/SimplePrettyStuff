@@ -1,6 +1,7 @@
 .clouds{
 
     position: relative;
+    z-index: 3;
 
 }
 
@@ -34,17 +35,17 @@
     top: 0px;
     right: 400px;
 
-    
     scale: 0.6;
+   
 
 
     transition: $transition5;
 
     animation: cloud-2-Move 70s infinite linear;
     @keyframes cloud-2-Move {
-        from {right: -80px; }
+        from {right: -100px; }
         50% {right: -200px; }
-        to {right: -80px; }
+        to {right: -100px; }
     }
     
 }
@@ -157,6 +158,28 @@
         from {right: 600px; }
         50% {right: 550px; }
         to {right: 600px; }
+    }
+    
+}
+
+.cloud-8{
+    z-index: 0;
+
+    position: absolute;
+    top: 0px;
+    right: 400px;
+
+    scale: 0.6;
+   
+
+
+    transition: $transition5;
+
+    animation: cloud-8-Move 70s infinite linear;
+    @keyframes cloud-8-Move {
+        from {right: 100px; }
+        50% {right: 200px; }
+        to {right: 100px; }
     }
     
 }

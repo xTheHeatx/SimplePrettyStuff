@@ -8,7 +8,7 @@ function parallaxScroll(className) {
 
         const shortNumber = Math.floor(scrollPosition * 100) / 100
 
-        slider1.setAttribute("style", `background-position-y: calc(-${shortNumber}px + 2px);`)
+        slider1.setAttribute("style", `background-position-y: calc(-${shortNumber}px + -0.1px);`)
 
     })
 
