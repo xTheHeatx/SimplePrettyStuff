@@ -1,0 +1,161 @@
+.clouds{
+   
+ 
+}
+
+
+.cloud-1{
+    z-index: 1;
+
+    position: absolute;
+    top: 350px;
+    right: 400px;
+
+    
+    scale: 0.5;
+
+
+    transition: $transition5;
+    
+    animation: cloud-1-Move 100s infinite linear;
+    @keyframes cloud-1-Move {
+        from {right: 700px; }
+        50% {right: 500px; }
+        to {right: 700px; }
+    }
+    
+}
+
+.cloud-2{
+    z-index: 1;
+
+    position: absolute;
+    top: 300px;
+    right: 400px;
+
+    
+    scale: 0.5;
+
+
+    transition: $transition5;
+
+    animation: cloud-2-Move 100s infinite linear;
+    @keyframes cloud-2-Move {
+        from {right: 100px; }
+        50% {right: -200px; }
+        to {right: 100px; }
+    }
+    
+}
+
+.cloud-3{
+    z-index: 1;
+
+    position: absolute;
+    top: 300px;
+    right: 400px;
+
+    
+    scale: 0.5;
+
+
+    transition: $transition5;
+
+    animation: cloud-3-Move 100s infinite linear;
+    @keyframes cloud-3-Move {
+        from {right: -700px; }
+        50% {right: -500px; }
+        to {right: -700px; }
+    }
+    
+}
+
+.cloud-4{
+    z-index: 1;
+
+    position: absolute;
+    top: 400px;
+    right: 400px;
+
+    
+    scale: 0.9;
+
+
+    transition: $transition5;
+
+    animation: cloud-4-Move 100s infinite linear;
+    @keyframes cloud-4-Move {
+        from {right: -600px; }
+        50% {right: -500px; }
+        to {right: -600px; }
+    }
+    
+}
+
+.cloud-5{
+    z-index: 1;
+
+    position: absolute;
+    top: 400px;
+    right: 400px;
+
+    
+    scale: 1;
+
+
+    transition: $transition5;
+    
+    animation: cloud-5-Move 100s infinite linear;
+    @keyframes cloud-5-Move {
+        from {right: 300px; }
+        50% {right: 350px; }
+        to {right: 300px; }
+    }
+    
+}
+
+.cloud-6{
+    z-index: 1;
+
+    position: absolute;
+    top: 400px;
+    right: 400px;
+
+    
+    scale: 0.7;
+
+
+    transition: $transition5;
+
+    animation: cloud-6-Move 100s infinite linear;
+    @keyframes cloud-6-Move {
+        from {right: -600px; }
+        50% {right: -500px; }
+        to {right: -600px; }
+    }
+    
+}
+
+
+.cloud-7{
+    z-index: 1;
+
+    position: absolute;
+    top: 400px;
+    right: 400px;
+
+    
+    scale: 0.7;
+    
+
+
+    transition: $transition5;
+
+    animation: cloud-7-Move 100s infinite linear;
+    @keyframes cloud-7-Move {
+        from {right: 600px; }
+        50% {right: 550px; }
+        to {right: 600px; }
+    }
+    
+}

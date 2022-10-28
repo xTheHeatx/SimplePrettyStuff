@@ -1,23 +1,21 @@
 .main-container {
     z-index: 0;
-    
-    display: flex;
-    flex-direction: column;
 
-    background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
+    
+    
+    // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
+    background-image: url('/src/img/bg-1.png');
     background-position-x: -100px;
     
     background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 3500px);
     
-
+    
     transition: $transition4;
+    overflow: hidden;
     
     
     &__wrapper {
-        
 
-        
-        
         
         display: flex;
         flex-direction: column;
@@ -25,16 +23,17 @@
         justify-content: center;
         
         
-overflow: hidden;
+        overflow: hidden;
         
     }
-
+    
     &__title{
         
-        margin: 150px 0 0 0;
-
+        margin: 900px 0 0 0;
+        
         text-align: center;
         font-size: 4rem;
+        
         color: $title-color-3;
         letter-spacing: 2px;
         
@@ -46,7 +45,7 @@ overflow: hidden;
 .slider{
     
     
-    margin: 150px 0 150px 0 ;
+    margin: 250px 0 150px 0 ;
     
     height: 550px;
     
@@ -63,12 +62,14 @@ overflow: hidden;
    
     &__wrapper{
         
+        margin: 0 0 230px 0;
         
         height: 550px;
         
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         
         transition: $transition !important;
         
@@ -83,6 +84,8 @@ overflow: hidden;
     
         height: 200px !important;
         width: 350px !important;
+
+    
 
         display: flex;
         justify-content: center;
