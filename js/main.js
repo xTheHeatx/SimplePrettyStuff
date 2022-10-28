@@ -20,6 +20,7 @@ parallaxScrollDIV('.cloud-5')
 parallaxScrollDIV('.cloud-6')
 parallaxScrollDIV('.cloud-7')
 parallaxScrollDIV('.cloud-8')
+parallaxScrollDIV('.cloud-9')
 
 
 swiper()

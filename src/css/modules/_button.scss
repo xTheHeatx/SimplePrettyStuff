@@ -1,5 +1,5 @@
 .button{
-    z-index: 3;
+    z-index: 4;
 
     margin: 300px 0 0 0;
     width: 90px;
@@ -27,9 +27,9 @@
 
     animation: shadow 2s infinite ease-in-out;
     @keyframes shadow {
-        from {box-shadow: 0px 5px 80px rgba($color: #ffd465, $alpha: 1) ;}
+        from {box-shadow: 0px 5px 80px rgba($color: #f7bd00, $alpha: 1) ;}
         50% {box-shadow: 0px 5px 50px rgba($color: #ffbd9c, $alpha: 1) ;}
-        to {box-shadow: 0px 5px 80px rgba($color: #ffd465, $alpha: 1) ;}
+        to {box-shadow: 0px 5px 80px rgba($color: #f7bd00, $alpha: 1) ;}
     }
     
         

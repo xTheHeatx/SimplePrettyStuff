@@ -7,7 +7,8 @@
     background-position-x: -100px;
     
     
-    background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 3500px);
+    
+    background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 3700px);
     
     
     transition: $transition4;
@@ -46,7 +47,7 @@
     
     
     margin: 30% 0 0 0 ;
-    padding: 300px 0 0 0;
+    padding: 500px 0 0 0;
     
     
 
@@ -65,7 +66,7 @@
     overflow: visible;
 
    
-    animation: slider-bg-fx 3s infinite linear ;
+    animation: slider-bg-fx 4s infinite linear ;
     @keyframes slider-bg-fx {
         from {background-position: -200px 30px; }
         50% {background-position: 0 0}
@@ -122,9 +123,22 @@
 
 
         &:hover{
+            
             transform: scale(1.2);
            
-            box-shadow: 2px 2px 300px rgba($color: #ffc096, $alpha: 0.8);
+            animation: card-halo 3s infinite ease-in-out;
+
+            @keyframes card-halo {
+                
+                
+                
+                
+                from {box-shadow: 0px 8px 90px rgba($color: #ffffff, $alpha: 0) ;}
+                15% {box-shadow: 0px 8px 100px rgba($color: #ffffff, $alpha: 0.5) ;}
+                30% {box-shadow: 0px 5px 50px rgba($color: #ffc7c7, $alpha: 0.4) ;}
+                
+                to {box-shadow: 0px 5px 50px rgba($color: #4a4a4a, $alpha: 0.4) ;}
+            }
             
         }
     
