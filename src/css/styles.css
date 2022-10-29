@@ -17,9 +17,6 @@ html {
 
 body {
   z-index: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 a {
@@ -532,6 +529,99 @@ a {
   }
 }
 
+.clouds-designs__cloud-1 {
+  z-index: 1;
+  position: absolute;
+  margin: 5% 0 70% 0;
+  scale: 0.15;
+  transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -webkit-animation: cloud-designs-Move1 40s infinite linear;
+          animation: cloud-designs-Move1 40s infinite linear;
+}
+@-webkit-keyframes cloud-designs-Move1 {
+  from {
+    right: 300px;
+  }
+  50% {
+    right: 200px;
+  }
+  to {
+    right: 300px;
+  }
+}
+@keyframes cloud-designs-Move1 {
+  from {
+    right: 300px;
+  }
+  50% {
+    right: 200px;
+  }
+  to {
+    right: 300px;
+  }
+}
+.clouds-designs__cloud-2 {
+  z-index: 1;
+  position: absolute;
+  margin: 5% 0 10% 0;
+  scale: 0.6;
+  transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -webkit-animation: cloud-designs-Move2 40s infinite linear;
+          animation: cloud-designs-Move2 40s infinite linear;
+}
+@-webkit-keyframes cloud-designs-Move2 {
+  from {
+    right: 1200px;
+  }
+  50% {
+    right: 1100px;
+  }
+  to {
+    right: 1200px;
+  }
+}
+@keyframes cloud-designs-Move2 {
+  from {
+    right: 1200px;
+  }
+  50% {
+    right: 1100px;
+  }
+  to {
+    right: 1200px;
+  }
+}
+.clouds-designs__cloud-3 {
+  z-index: 1;
+  position: absolute;
+  scale: 0.4;
+  transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -webkit-animation: cloud-designs-Move3 40s infinite linear;
+          animation: cloud-designs-Move3 40s infinite linear;
+}
+@-webkit-keyframes cloud-designs-Move3 {
+  from {
+    right: -100px;
+  }
+  50% {
+    right: -200px;
+  }
+  to {
+    right: -100px;
+  }
+}
+@keyframes cloud-designs-Move3 {
+  from {
+    right: -100px;
+  }
+  50% {
+    right: -200px;
+  }
+  to {
+    right: -100px;
+  }
+}
+
 .main-container {
   z-index: 0;
   background-image: url("/src/img/bg-1.png");
@@ -590,6 +680,7 @@ a {
   text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
 }
 .main-container__title {
+  z-index: 3;
   margin: 0 0 250px 0;
   text-align: center;
   font-size: 4rem;
@@ -643,7 +734,7 @@ a {
   transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important !important;
 }
 .slider__item {
-  z-index: 2;
+  z-index: 3;
   margin: 30px;
   height: 200px !important;
   width: 350px !important;
