@@ -8,8 +8,9 @@ function ScrollToDesigns() {
 
         const slider = document.getElementById('slider')
         const clouds = document.getElementById('clouds')
+        const container = document.getElementById('container')
 
-        body.removeAttribute('style')
+        container.removeAttribute('style')
         clouds.removeAttribute('style')
 
         window.scrollTo({ top: 1400, behavior: 'smooth' })

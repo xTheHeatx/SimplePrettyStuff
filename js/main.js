@@ -41,7 +41,7 @@ parallaxScrollDIV('.cloud-9')
 ScrollToDesigns()
 ScrollToAbout()
 
-// ScrollToAbout('about', 1400, 'beforeend')
+
 
 
 renderHeaderWithDelay('sun', 'body', 'afterbegin')//buttonId, divId, whereToPast                      HEADER
