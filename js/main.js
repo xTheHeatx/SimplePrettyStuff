@@ -10,6 +10,10 @@ import swiper from "./swiper.js"
 
 
 
+
+
+
+
 parallaxScroll('.main-container')
 
 parallaxMouseMove('.main-container', 2)

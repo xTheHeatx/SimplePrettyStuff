@@ -2,12 +2,38 @@ function ScrollToDesigns() {
 
 
 
+    window.addEventListener('scroll', () => {
+
+        const scrollPosition = window.scrollY
+        console.log(scrollPosition)
+    })
+
+
+
+    const scrollPosition = window.scrollY
+
+    window.onload = (() => {
+
+        if (scrollPosition > 0) {
+
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+
+    })
+
+
+
+
+
+
 
     const sun = document.getElementById('sun')
 
 
 
     sun.addEventListener('click', () => {
+
         const container = document.getElementById('container')
         const wrapper = document.getElementById('wrapper')
         const clouds = document.getElementById('clouds')
@@ -15,6 +41,13 @@ function ScrollToDesigns() {
         container.removeAttribute('style')
         wrapper.removeAttribute('style')
         clouds.removeAttribute('style')
+
+
+        if (wrapper.classList.contains('designs-opened')) {
+
+            return
+
+        }
 
 
         wrapper.insertAdjacentHTML('beforeend', `

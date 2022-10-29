@@ -10,6 +10,7 @@ function parallaxScroll(className) {
 
         slider1.setAttribute("style", `background-position-y: calc(-${shortNumber}px + 1px);`)
 
+
     })
 
 }

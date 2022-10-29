@@ -81,7 +81,7 @@ a {
     box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
   }
   70% {
-    box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 8px 100px white;
   }
   95% {
     box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
@@ -95,7 +95,7 @@ a {
     box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
   }
   70% {
-    box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 8px 100px white;
   }
   95% {
     box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
