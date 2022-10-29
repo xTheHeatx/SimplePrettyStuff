@@ -76,7 +76,7 @@ function ScrollToDesigns() {
         wrapper.classList.add('designs-opened')
 
 
-        window.scrollTo({ top: 1300, behavior: 'smooth' })
+        window.scrollTo({ top: 1400, behavior: 'smooth' })
 
         const body = document.getElementById('body')
 

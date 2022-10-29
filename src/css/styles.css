@@ -619,29 +619,35 @@ a {
 }
 .slider__item:hover {
   transform: scale(1.2);
-  -webkit-animation: card-halo 2s infinite ease-in-out;
-          animation: card-halo 2s infinite ease-in-out;
+  -webkit-animation: card-halo 3s infinite ease-in-out;
+          animation: card-halo 3s infinite ease-in-out;
 }
 @-webkit-keyframes card-halo {
   from {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
+    box-shadow: 0px 8px 100px rgba(255, 255, 255, 0);
   }
   15% {
     box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.5);
   }
+  80% {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  }
   to {
-    box-shadow: 0px 5px 50px rgba(74, 74, 74, 0.4);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   }
 }
 @keyframes card-halo {
   from {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
+    box-shadow: 0px 8px 100px rgba(255, 255, 255, 0);
   }
   15% {
     box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.5);
   }
+  80% {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  }
   to {
-    box-shadow: 0px 5px 50px rgba(74, 74, 74, 0.4);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   }
 }
 .slider__link-1 {
