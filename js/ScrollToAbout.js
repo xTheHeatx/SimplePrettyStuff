@@ -21,7 +21,7 @@ function ScrollToAbout() {
         footer.classList.add('rendered')
 
 
-        window.scrollTo({ top: 3400, behavior: 'smooth' })
+        window.scrollTo({ top: 2500, behavior: 'smooth' })
 
 
 

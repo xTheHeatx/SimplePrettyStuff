@@ -3,7 +3,7 @@
     
     
     // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
-    background-image: url('/src/img/bg-1.png');
+    background-image: url('/src/img/bg-1-1.png');
     
     
     
@@ -12,9 +12,9 @@
     
     animation: main-bg-fx 15s infinite linear ;
     @keyframes main-bg-fx {
-        from {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 6000px); background-position-x: -700px; background-position-y: -100px;}
-        50% {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 5000px); background-position-x: 50px;background-position-y: 50px;}
-        to {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 6000px); background-position-x: -700px;background-position-y: -100px;}
+        from {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px); background-position-x: -700px; background-position-y: -100px;}
+        50% {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 10000px); background-position-x: 50px;background-position-y: 50px;}
+        to {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px); background-position-x: -700px;background-position-y: -100px;}
     }
     
     
@@ -72,7 +72,7 @@
     background-image: url('/src/img/bg-1.png');
     // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
     
-    background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 3800px);
+    background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px);
     
     
     transition: $transition4;

@@ -7,6 +7,8 @@ import ScrollToDesigns from "./ScrollToDesigns.js"
 
 import ScrollToAbout from "./ScrollToAbout.js"
 
+import ScrollToTop from "./ScrollToTop.js"
+
 import renderHeaderWithDelay from "./renderHeaderWithDelay.js"
 
 
@@ -24,9 +26,9 @@ window.onload = () => {
 
 
 
-parallaxScroll('.main-container')
+// parallaxScroll('.main-container')
 
-parallaxMouseMove('.main-container', 2)
+// parallaxMouseMove('.main-container', 2)
 
 parallaxScrollDIV('.cloud-1')
 parallaxScrollDIV('.cloud-2')
@@ -40,6 +42,7 @@ parallaxScrollDIV('.cloud-9')
 
 ScrollToDesigns()
 ScrollToAbout()
+ScrollToTop()
 
 
 

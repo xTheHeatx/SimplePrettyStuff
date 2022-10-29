@@ -624,7 +624,7 @@ a {
 
 .main-container {
   z-index: 0;
-  background-image: url("/src/img/bg-1.png");
+  background-image: url("/src/img/bg-1-1.png");
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
   -webkit-animation: main-bg-fx 15s infinite linear;
@@ -632,34 +632,34 @@ a {
 }
 @-webkit-keyframes main-bg-fx {
   from {
-    background-size: calc((100vw - 480px) / 800 * 8 + 6000px);
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
     background-position-x: -700px;
     background-position-y: -100px;
   }
   50% {
-    background-size: calc((100vw - 480px) / 800 * 8 + 5000px);
+    background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
     background-position-x: 50px;
     background-position-y: 50px;
   }
   to {
-    background-size: calc((100vw - 480px) / 800 * 8 + 6000px);
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
     background-position-x: -700px;
     background-position-y: -100px;
   }
 }
 @keyframes main-bg-fx {
   from {
-    background-size: calc((100vw - 480px) / 800 * 8 + 6000px);
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
     background-position-x: -700px;
     background-position-y: -100px;
   }
   50% {
-    background-size: calc((100vw - 480px) / 800 * 8 + 5000px);
+    background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
     background-position-x: 50px;
     background-position-y: 50px;
   }
   to {
-    background-size: calc((100vw - 480px) / 800 * 8 + 6000px);
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
     background-position-x: -700px;
     background-position-y: -100px;
   }
@@ -693,7 +693,7 @@ a {
   margin: 30% 0 0 0;
   padding: 500px 0 0 0;
   background-image: url("/src/img/bg-1.png");
-  background-size: calc((100vw - 480px) / 800 * 8 + 3800px);
+  background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
   display: flex;
@@ -802,6 +802,74 @@ a {
   background-size: 100%;
   border-radius: 10px;
   transition: all 600ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
+}
+
+.about {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("/src/img/bg-1-1.png");
+  transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
+  overflow: hidden;
+  -webkit-animation: about-bg-fx 15s infinite linear;
+          animation: about-bg-fx 15s infinite linear;
+}
+@-webkit-keyframes about-bg-fx {
+  from {
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
+    background-position-x: -700px;
+    background-position-y: 100px;
+  }
+  50% {
+    background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
+    background-position-x: 50px;
+    background-position-y: 50px;
+  }
+  to {
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
+    background-position-x: -700px;
+    background-position-y: 100px;
+  }
+}
+@keyframes about-bg-fx {
+  from {
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
+    background-position-x: -700px;
+    background-position-y: 100px;
+  }
+  50% {
+    background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
+    background-position-x: 50px;
+    background-position-y: 50px;
+  }
+  to {
+    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
+    background-position-x: -700px;
+    background-position-y: 100px;
+  }
+}
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 200px 0 200px 0;
+}
+.about__title {
+  z-index: 3;
+  margin: 30px 0 20px 0;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 2.2rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+}
+.about__button {
+  margin: 3% 0 0 80%;
 }
 
 .footer {

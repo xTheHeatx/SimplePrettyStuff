@@ -13,7 +13,7 @@ function ScrollToDesigns() {
         container.removeAttribute('style')
         clouds.removeAttribute('style')
 
-        window.scrollTo({ top: 1400, behavior: 'smooth' })
+        window.scrollTo({ top: 1420, behavior: 'smooth' })
 
 
         slider.classList.remove('hide')
@@ -21,7 +21,7 @@ function ScrollToDesigns() {
         slider.classList.add('rendered')
 
 
-        window.scrollTo({ top: 1400, behavior: 'smooth' })
+        window.scrollTo({ top: 1420, behavior: 'smooth' })
 
 
 
