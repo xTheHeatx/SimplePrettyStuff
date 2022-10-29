@@ -2,25 +2,19 @@ function ScrollToDesigns() {
 
 
 
-    window.addEventListener('scroll', () => {
-
-        const scrollPosition = window.scrollY
-        console.log(scrollPosition)
-    })
 
 
 
-    const scrollPosition = window.scrollY
-
-    window.onload = (() => {
-
-        if (scrollPosition > 0) {
-
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-        }
 
 
-    })
+    window.onload = () => {
+
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+
+    }
+
+
+
 
 
 

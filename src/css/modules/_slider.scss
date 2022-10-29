@@ -16,7 +16,7 @@
     transition: $transition4;
     overflow: hidden;
     
-    animation: main-bg-fx 25s infinite linear ;
+    animation: main-bg-fx 15s infinite linear ;
     @keyframes main-bg-fx {
         from {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 6000px); background-position-x: -700px; background-position-y: -100px;}
         50% {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 5000px); background-position-x: 50px;background-position-y: 50px;}

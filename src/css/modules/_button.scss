@@ -22,26 +22,38 @@
 
     transition: $transition2;
 
-    animation: shadow 4s infinite ease-in-out;
+    animation: shadow 2s infinite ease-in-out;
     @keyframes shadow {
-                from {box-shadow: 0px 8px 90px rgba($color: #ffffff, $alpha: 0) ;}
-                70% {box-shadow: 0px 8px 100px rgba($color: #ffffff, $alpha: 1) ;}
+                from {box-shadow: 0px 8px 90px rgba($color: #ffffff, $alpha: 0.1) ;}
+                15% {box-shadow: 2px 2px 60px rgba($color: #ffffff, $alpha: 1) ;}
                 95% {box-shadow: 0px 5px 50px rgba($color: #5e370b, $alpha: 0.3) ;}
                 to {box-shadow: 0px 8px 90px rgba($color: #ffffff, $alpha: 0) ;}
+    }
+
+    &:hover{
+        
+
+        animation: button-scale 1s infinite ease-in-out;
+        @keyframes button-scale {
+            0% { transform: scale(1.1);}
+            50% { transform: scale(1);  }
+            100% { transform: scale(1.1);  }
+        }
+
     }
 
 
     &:before {
         content: '';
-        background: linear-gradient(45deg, #ff0000, #ff7300,  #7a00ff, #ff00c8, #ff0000);
+        background: linear-gradient(45deg, #ff7676, #ffb579,  #bf84ff, #ff85e5, #ff7d7d);
         position: absolute;
-        top: -2px;
-        left:-2px;
+        top: 0px;
+        left:0px;
         background-size: 400%;
         z-index: 4;
-        filter: blur(5px);
-        width: 90px;
-    height: 90px;
+        filter: blur(2px);
+        width: 86px;
+        height: 86px;
         animation: glowing 20s linear infinite;
         opacity: 0;
         transition: opacity .3s ease-in-out;
@@ -49,11 +61,16 @@
     }
     &:active {
         color: rgb(255, 255, 255)
+        
     }
     &:active:after {
-        background: transparent;
+        
+        background: #fffae8;
     }
+
+
     &:hover:before {
+        
         opacity: 1;
     }
     &:after {

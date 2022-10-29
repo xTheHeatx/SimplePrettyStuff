@@ -73,15 +73,15 @@ a {
   position: relative;
   border-radius: 60px;
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
-  -webkit-animation: shadow 4s infinite ease-in-out;
-          animation: shadow 4s infinite ease-in-out;
+  -webkit-animation: shadow 2s infinite ease-in-out;
+          animation: shadow 2s infinite ease-in-out;
 }
 @-webkit-keyframes shadow {
   from {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
+    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0.1);
   }
-  70% {
-    box-shadow: 0px 8px 100px white;
+  15% {
+    box-shadow: 2px 2px 60px white;
   }
   95% {
     box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
@@ -92,10 +92,10 @@ a {
 }
 @keyframes shadow {
   from {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
+    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0.1);
   }
-  70% {
-    box-shadow: 0px 8px 100px white;
+  15% {
+    box-shadow: 2px 2px 60px white;
   }
   95% {
     box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
@@ -104,17 +104,43 @@ a {
     box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
   }
 }
+.button-1:hover {
+  -webkit-animation: button-scale 1s infinite ease-in-out;
+          animation: button-scale 1s infinite ease-in-out;
+}
+@-webkit-keyframes button-scale {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes button-scale {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 .button-1:before {
   content: "";
-  background: linear-gradient(45deg, #ff0000, #ff7300, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #ff7676, #ffb579, #bf84ff, #ff85e5, #ff7d7d);
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: 0px;
+  left: 0px;
   background-size: 400%;
   z-index: 4;
-  filter: blur(5px);
-  width: 90px;
-  height: 90px;
+  filter: blur(2px);
+  width: 86px;
+  height: 86px;
   -webkit-animation: glowing 20s linear infinite;
           animation: glowing 20s linear infinite;
   opacity: 0;
@@ -125,7 +151,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .button-1:active:after {
-  background: transparent;
+  background: #fffae8;
 }
 .button-1:hover:before {
   opacity: 1;
@@ -178,8 +204,8 @@ a {
   right: 700px;
   scale: 0.5;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-1-Move 30s infinite linear;
-          animation: cloud-1-Move 30s infinite linear;
+  -webkit-animation: cloud-1-Move 15s infinite linear;
+          animation: cloud-1-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-1-Move {
   from {
@@ -211,8 +237,8 @@ a {
   right: -100px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-2-Move 30s infinite linear;
-          animation: cloud-2-Move 30s infinite linear;
+  -webkit-animation: cloud-2-Move 15s infinite linear;
+          animation: cloud-2-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-2-Move {
   from {
@@ -244,8 +270,8 @@ a {
   right: -700px;
   scale: 0.5;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-3-Move 30s infinite linear;
-          animation: cloud-3-Move 30s infinite linear;
+  -webkit-animation: cloud-3-Move 15s infinite linear;
+          animation: cloud-3-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-3-Move {
   from {
@@ -277,8 +303,8 @@ a {
   right: -600px;
   scale: 0.8;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-4-Move 30s infinite linear;
-          animation: cloud-4-Move 30s infinite linear;
+  -webkit-animation: cloud-4-Move 15s infinite linear;
+          animation: cloud-4-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-4-Move {
   from {
@@ -310,8 +336,8 @@ a {
   right: 300px;
   scale: 1;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-5-Move 30s infinite linear;
-          animation: cloud-5-Move 30s infinite linear;
+  -webkit-animation: cloud-5-Move 15s infinite linear;
+          animation: cloud-5-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-5-Move {
   from {
@@ -343,8 +369,8 @@ a {
   right: -600px;
   scale: 0.7;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-6-Move 30s infinite linear;
-          animation: cloud-6-Move 30s infinite linear;
+  -webkit-animation: cloud-6-Move 15s infinite linear;
+          animation: cloud-6-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-6-Move {
   from {
@@ -376,8 +402,8 @@ a {
   right: 700px;
   scale: 0.7;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-7-Move 30s infinite linear;
-          animation: cloud-7-Move 30s infinite linear;
+  -webkit-animation: cloud-7-Move 15s infinite linear;
+          animation: cloud-7-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-7-Move {
   from {
@@ -409,8 +435,8 @@ a {
   right: 100px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-8-Move 30s infinite linear;
-          animation: cloud-8-Move 30s infinite linear;
+  -webkit-animation: cloud-8-Move 15s infinite linear;
+          animation: cloud-8-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-8-Move {
   from {
@@ -442,8 +468,8 @@ a {
   right: 900px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-9-Move 30s infinite linear;
-          animation: cloud-9-Move 30s infinite linear;
+  -webkit-animation: cloud-9-Move 15s infinite linear;
+          animation: cloud-9-Move 15s infinite linear;
 }
 @-webkit-keyframes cloud-9-Move {
   from {
@@ -473,8 +499,8 @@ a {
   background-image: url("/src/img/bg-1.png");
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
-  -webkit-animation: main-bg-fx 25s infinite linear;
-          animation: main-bg-fx 25s infinite linear;
+  -webkit-animation: main-bg-fx 15s infinite linear;
+          animation: main-bg-fx 15s infinite linear;
 }
 @-webkit-keyframes main-bg-fx {
   from {
@@ -641,23 +667,6 @@ a {
   background-size: 100%;
   border-radius: 10px;
   transition: all 600ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
-}
-
-.slider2 {
-  width: 100%;
-  margin-top: -300px;
-  transition: all 600ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
-}
-.slider2__wrapper {
-  width: 100%;
-  height: 1500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: url(/src/img/bg.png);
-  background-size: cover;
-  background-position-x: 50%;
 }
 
 .footer {
