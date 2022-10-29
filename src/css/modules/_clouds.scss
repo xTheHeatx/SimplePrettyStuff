@@ -10,7 +10,7 @@ margin-top: 100px;
 
 $scale3D-low: scale3d(0.9, 0.9, 0.9);
 $scale3D-hi: scale3d(1.2, 1.2, 1.2);
-$anim-speed: 15s;
+$anim-speed: 20s;
 
 .cloud-1{
     z-index: 1;
@@ -192,11 +192,7 @@ $anim-speed: 15s;
     transition: $transition5;
 
     animation: cloud-7-Move $anim-speed infinite linear;
-    // @keyframes cloud-7-Move {
-    //     from {right: 700px; transform:scale(1);}
-    //     50% {right: 650px; transform:scale(1.1);}
-    //     to {right: 700px; transform:scale(1);}
-    // }
+    
 
     @keyframes cloud-7-Move {
         from {transform:$scale3D-low;}
@@ -264,3 +260,28 @@ $anim-speed: 15s;
     
 }
 
+.cloud-10{
+    z-index: 1;
+
+    position: absolute;
+    top: 20px;
+    right: 400px;
+
+    
+    scale: 0.4;
+    
+
+
+    transition: $transition5;
+
+    animation: cloud-10-Move $anim-speed infinite linear;
+    
+
+    @keyframes cloud-10-Move {
+        from {transform:$scale3D-low;}
+        50% { transform:$scale3D-hi;}
+        to { transform:$scale3D-low;}
+    }
+    
+    
+}

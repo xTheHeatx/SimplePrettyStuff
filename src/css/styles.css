@@ -204,8 +204,8 @@ a {
   right: 700px;
   scale: 0.5;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-1-Move 15s infinite linear;
-          animation: cloud-1-Move 15s infinite linear;
+  -webkit-animation: cloud-1-Move 20s infinite linear;
+          animation: cloud-1-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-1-Move {
   from {
@@ -237,8 +237,8 @@ a {
   right: -100px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-2-Move 15s infinite linear;
-          animation: cloud-2-Move 15s infinite linear;
+  -webkit-animation: cloud-2-Move 20s infinite linear;
+          animation: cloud-2-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-2-Move {
   from {
@@ -270,8 +270,8 @@ a {
   right: -700px;
   scale: 0.5;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-3-Move 15s infinite linear;
-          animation: cloud-3-Move 15s infinite linear;
+  -webkit-animation: cloud-3-Move 20s infinite linear;
+          animation: cloud-3-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-3-Move {
   from {
@@ -303,8 +303,8 @@ a {
   right: -600px;
   scale: 0.8;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-4-Move 15s infinite linear;
-          animation: cloud-4-Move 15s infinite linear;
+  -webkit-animation: cloud-4-Move 20s infinite linear;
+          animation: cloud-4-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-4-Move {
   from {
@@ -336,8 +336,8 @@ a {
   right: 300px;
   scale: 1;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-5-Move 15s infinite linear;
-          animation: cloud-5-Move 15s infinite linear;
+  -webkit-animation: cloud-5-Move 20s infinite linear;
+          animation: cloud-5-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-5-Move {
   from {
@@ -369,8 +369,8 @@ a {
   right: -600px;
   scale: 0.7;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-6-Move 15s infinite linear;
-          animation: cloud-6-Move 15s infinite linear;
+  -webkit-animation: cloud-6-Move 20s infinite linear;
+          animation: cloud-6-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-6-Move {
   from {
@@ -402,8 +402,8 @@ a {
   right: 700px;
   scale: 0.7;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-7-Move 15s infinite linear;
-          animation: cloud-7-Move 15s infinite linear;
+  -webkit-animation: cloud-7-Move 20s infinite linear;
+          animation: cloud-7-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-7-Move {
   from {
@@ -435,8 +435,8 @@ a {
   right: 100px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-8-Move 15s infinite linear;
-          animation: cloud-8-Move 15s infinite linear;
+  -webkit-animation: cloud-8-Move 20s infinite linear;
+          animation: cloud-8-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-8-Move {
   from {
@@ -468,8 +468,8 @@ a {
   right: 900px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-9-Move 15s infinite linear;
-          animation: cloud-9-Move 15s infinite linear;
+  -webkit-animation: cloud-9-Move 20s infinite linear;
+          animation: cloud-9-Move 20s infinite linear;
 }
 @-webkit-keyframes cloud-9-Move {
   from {
@@ -494,9 +494,42 @@ a {
   }
 }
 
+.cloud-10 {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  right: 400px;
+  scale: 0.4;
+  transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -webkit-animation: cloud-10-Move 20s infinite linear;
+          animation: cloud-10-Move 20s infinite linear;
+}
+@-webkit-keyframes cloud-10-Move {
+  from {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  to {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+}
+@keyframes cloud-10-Move {
+  from {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  to {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+}
+
 .main-container {
   z-index: 0;
-  background-image: url("/src/img/bg-1.png");
+  background-image: url("https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI");
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
   -webkit-animation: main-bg-fx 15s infinite linear;
@@ -563,7 +596,7 @@ a {
 .slider {
   margin: 30% 0 0 0;
   padding: 500px 0 0 0;
-  background-image: url("/src/img/bg-1.png");
+  background-image: url("https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI");
   background-size: calc((100vw - 480px) / 800 * 8 + 3800px);
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
