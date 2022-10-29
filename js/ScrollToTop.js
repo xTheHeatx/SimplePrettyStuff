@@ -28,7 +28,7 @@ function ScrollToTop() {
 
 
 
-        }, 300);
+        }, 1000);
 
 
         const clouds = document.getElementById('clouds')

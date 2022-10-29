@@ -826,7 +826,7 @@ a {
   50% {
     background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
     background-position-x: 50px;
-    background-position-y: 50px;
+    background-position-y: 90px;
   }
   to {
     background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
@@ -843,7 +843,7 @@ a {
   50% {
     background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
     background-position-x: 50px;
-    background-position-y: 50px;
+    background-position-y: 90px;
   }
   to {
     background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
@@ -856,7 +856,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 200px 0 200px 0;
+  margin: 200px 0 150px 0;
 }
 .about__title {
   z-index: 3;

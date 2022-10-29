@@ -21,7 +21,7 @@
     animation: about-bg-fx 15s infinite linear ;
     @keyframes about-bg-fx {
         from {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px); background-position-x: -700px; background-position-y: 100px;}
-        50% {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 10000px); background-position-x: 50px;background-position-y: 50px;}
+        50% {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 10000px); background-position-x: 50px;background-position-y: 90px;}
         to {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px); background-position-x: -700px;background-position-y: 100px;}
     }
 
@@ -32,7 +32,7 @@
         align-items:center;
         justify-content: center;
 
-        margin: 200px 0 200px 0;
+        margin: 200px 0 150px 0;
     }
     
     
