@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Nice Day</title>
 </head>
-<body id="body">
+<body id="body" style="height:  calc( (100vh - 100px)/(1920 - 100)  + 1100px);">
 
-        <section class="main-container" style="height: 1100px;" id="container" >
-            <div class="main-container__wrapper" style="height: 1100px;" id="wrapper">
+        <section class="main-container"  id="container"  >
+            <div class="main-container__wrapper"  id="wrapper" >
                 <h2 class="main-container__title-1">GO</h2>
                     
-                    <button class="main-container__watch-button button-1" id="sun"></button>
+                    <button class="main-container__watch-button button-go def-button" id="sun"></button>
 
-                <div class="clouds" id="clouds" style="margin-bottom: 40%">
+                <div class="clouds" id="clouds" style="margin-bottom: 60%">
                     <img class="cloud-1 cloud-3d" src="./src/img/cloud-1.png" ></img>
                     <img class="cloud-2 cloud-3d" src="./src/img/cloud-2.png" ></img>
                     <img class="cloud-3 cloud-3d" src="./src/img/cloud-3.png" ></img>
@@ -28,16 +28,49 @@
                     <img class="cloud-8 cloud-3d" src="./src/img/cloud-2.png" ></img>
                     <img class="cloud-9 cloud-3d" src="./src/img/cloud-2.png" ></img>
                     <img class="cloud-10 cloud-3d" src="./src/img/cloud-1.png" ></img>
+
                 </div>
+
+                <!-- designs -->
+                <div class="swiper slider slider_main hide" id="slider">
+                    <h2 class="main-container__title">MY DESIGNS</h2>
+                    <div class="swiper-wrapper slider__wrapper">
+
+                        <div class="swiper-slide slider__item">
+                            <a href="https://xtheheatx.github.io/cinemaPlace/" class="slider__link-1"></a>
+                        </div>
+
+                        <div class="swiper-slide slider__item">
+                            <a href="https://xtheheatx.github.io/cinemaPlace/" class="slider__link-2" id="2">  </a>
+                        </div>
+
+                        <div class="swiper-slide slider__item">
+                            <a href="./matrix.html" class="slider__link-3"></a>
+                        </div>
+
+                    </div>
+                    <button class="main-container__watch-button button-about def-button" id="about-btn"></button>
+                </div>
+                <!-- designs -->
+                
+                <!-- about -->
+                <div class="swiper slider slider_main hide" id="about-div">
+                    <h2 class="main-container__title">Можешь использовать медиа запросы. Ты можешь задавать условия, при которых тот или иной блок будет принимать определённые стили. В твоём примере если ширина окна 1100px то левой блок 250px а правый 900пикселей, но получается, что он не влезет, так как 900 + 250 =1150 пикселей и правый блок будет на новой строке. Главное, чтобы ты понял, можно задавать в % , как в предыдущих примерах, а если тебе нужны конкретная ширина, то используй медиа запросы</h2>
+        
+                
+                </div>
+                <!-- about -->
 
             </div>
         </section>
 
-        <!-- <footer class="footer">
+        <<footer class="footer hide" id='footer'>
             <div class="footer__wrapper">
                 <div class="footer__copyright">Powered by medlclno 2022</div>
             </div>
-        </footer> -->
+        </footer>
+
+
     <script type="module" src="./src/libs/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
     <!-- <script  src="./js/parallax.js"></script> -->

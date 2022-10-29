@@ -5,10 +5,20 @@ import parallaxMouseMove from "./parallaxMouseMove.js"
 
 import ScrollToDesigns from "./ScrollToDesigns.js"
 
+import ScrollToAbout from "./ScrollToAbout.js"
+
+import renderHeaderWithDelay from "./renderHeaderWithDelay.js"
+
 
 import swiper from "./swiper.js"
 
 
+
+window.onload = () => {
+
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+
+}
 
 
 
@@ -29,6 +39,12 @@ parallaxScrollDIV('.cloud-8')
 parallaxScrollDIV('.cloud-9')
 
 ScrollToDesigns()
+ScrollToAbout()
+
+// ScrollToAbout('about', 1400, 'beforeend')
+
+
+renderHeaderWithDelay('sun', 'body', 'afterbegin')//buttonId, divId, whereToPast                      HEADER
 
 
 swiper()

@@ -2,14 +2,8 @@
     z-index: 0;
     
     
-    background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
-    // background-image: url('/src/img/bg-1.png');
-    
-    
-    
-    
-    
-    
+    // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
+    background-image: url('/src/img/bg-1.png');
     
     
     
@@ -74,8 +68,8 @@
     
     
 
-    // background-image: url('/src/img/bg-1.png');
-    background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
+    background-image: url('/src/img/bg-1.png');
+    // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
     
     background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 3800px);
     
@@ -86,6 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    // flex-wrap: wrap;
     
     overflow: visible;
 
@@ -102,7 +97,7 @@
     
     &__wrapper{
         
-        margin: 0 0 230px 0;
+        margin: 0 0 250px 0;
         
         
         display: flex;
