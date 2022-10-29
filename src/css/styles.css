@@ -60,82 +60,6 @@ a {
   transform: scale(1.2);
 }
 
-.button {
-  z-index: 4;
-  margin: 0 0 0 0;
-  width: 90px;
-  height: 90px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 60px;
-  background: #fffae8;
-  transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
-  -webkit-animation: shadow 3s infinite ease-in-out;
-          animation: shadow 3s infinite ease-in-out;
-}
-@-webkit-keyframes shadow {
-  from {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
-  }
-  15% {
-    box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.5);
-  }
-  90% {
-    box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
-  }
-  to {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
-  }
-}
-@keyframes shadow {
-  from {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
-  }
-  15% {
-    box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.5);
-  }
-  90% {
-    box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
-  }
-  to {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
-  }
-}
-.button:hover {
-  transform: scale3d(1.2, 1.2, 1.5);
-  -webkit-animation: sun-hover 2s infinite ease-in-out;
-          animation: sun-hover 2s infinite ease-in-out;
-}
-@-webkit-keyframes sun-hover {
-  from {
-    box-shadow: 0px 2px 20px white;
-  }
-  25% {
-    box-shadow: 0px 2px 20px #ffd6a3;
-  }
-  75% {
-    box-shadow: 0px 2px 20px #929498;
-  }
-  to {
-    box-shadow: 0px 2px 20px white;
-  }
-}
-@keyframes sun-hover {
-  from {
-    box-shadow: 0px 2px 20px white;
-  }
-  25% {
-    box-shadow: 0px 2px 20px #ffd6a3;
-  }
-  75% {
-    box-shadow: 0px 2px 20px #929498;
-  }
-  to {
-    box-shadow: 0px 2px 20px white;
-  }
-}
-
 .button-1 {
   margin: 40px 0 0 0;
   z-index: 4;
@@ -151,6 +75,20 @@ a {
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   -webkit-animation: shadow 4s infinite ease-in-out;
           animation: shadow 4s infinite ease-in-out;
+}
+@-webkit-keyframes shadow {
+  from {
+    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
+  }
+  70% {
+    box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.7);
+  }
+  95% {
+    box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
+  }
+  to {
+    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
+  }
 }
 @keyframes shadow {
   from {
@@ -579,7 +517,7 @@ a {
   overflow: hidden;
 }
 .main-container__title-1 {
-  margin: 300px 0 0 0;
+  margin: 200px 0 0 0;
   text-align: center;
   font-size: 4rem;
   color: rgb(255, 255, 255);

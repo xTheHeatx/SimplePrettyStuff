@@ -1,6 +1,6 @@
 .main-container {
     z-index: 0;
-
+    
     
     // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
     background-image: url('/src/img/bg-1.png');
@@ -12,9 +12,10 @@
     
     
     
+    
     transition: $transition4;
     overflow: hidden;
-
+    
     animation: main-bg-fx 25s infinite linear ;
     @keyframes main-bg-fx {
         from {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 6000px); background-position-x: -700px; background-position-y: -100px;}
@@ -24,7 +25,8 @@
     
     
     &__wrapper {
-
+        
+        
         
         display: flex;
         flex-direction: column;
@@ -38,7 +40,7 @@
     
     &__title-1{
         
-        margin: 300px 0 0 0;
+        margin: 200px 0 0 0;
         
         text-align: center;
         font-size: 4rem;

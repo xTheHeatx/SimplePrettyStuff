@@ -8,7 +8,7 @@ function parallaxScrollDIV(className) {
 
         const shortNumber = Math.floor(scrollPosition * 100) / 100
 
-        object.setAttribute("style", `transform: translateY(calc(-${shortNumber}px / 6));`)
+        object.setAttribute("style", `transform: translateY(calc(-${shortNumber}px / 2));`)
 
     })
 
