@@ -51,6 +51,27 @@ function ScrollToDesigns() {
 
         window.scrollTo({ top: 1300, behavior: 'smooth' })
 
+        const body = document.getElementById('body')
+
+        setTimeout(() => {
+            body.insertAdjacentHTML('afterbegin', `
+                <header class="header">
+                    <div class="header__wrapper">
+                        <div class="header__link-block">
+                            <a href="https://xtheheatx.github.io/SimplePrettyStuff/index.html" class="header__link">MY DESIGNS</a>
+                            <a href="https://xtheheatx.github.io/SimplePrettyStuff/index.html" class="header__link">MY DESIGNS</a>
+                            <a href="https://xtheheatx.github.io/SimplePrettyStuff/index.html" class="header__link">CONTACTS</a>
+                            <a href="https://xtheheatx.github.io/SimplePrettyStuff/index.html" class="header__link">ABOUT ME</a>
+                        </div>
+                    </div>
+                </header>
+                `,)
+
+        }, 300);
+
+
+
+
     })
 
 
