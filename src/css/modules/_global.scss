@@ -191,6 +191,52 @@ a{
         transform: scale(calc(1/0.7));
         
     }
+
+    &__menu-button{
+
+        position: absolute;
+        right: 98%;
+        bottom: 94%;
+
+        width: 20px;
+        height: 30px;
+
+        background: transparent;
+        border: none;
+
+        cursor: pointer;
+
+        
+    }
+
+    .pop-button{
+    margin-bottom: 2px;
+        
+        width: 7px;
+        height: 7px;
+    
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #fffae8;
+        
+        position: relative;
+        border-radius: 60px;
+    
+    
+    
+    
+        transition: $transition2;
+    
+        animation: pop-btn 2.5s infinite ease-in-out;
+        @keyframes pop-btn {
+                    from {box-shadow: 0px 1px 10px rgba($color: #ffffff, $alpha: 0.1) ;}
+                    15% {box-shadow: 0px 1px 10px rgba($color: #ffffff, $alpha: 1) ;}
+                    95% {box-shadow: 0px 1px 10px rgba($color: #5e370b, $alpha: 0.3) ;}
+                    to {box-shadow: 0px 1px 10px rgba($color: #ffffff, $alpha: 0) ;}
+        }
+
+    }
     
 }
 

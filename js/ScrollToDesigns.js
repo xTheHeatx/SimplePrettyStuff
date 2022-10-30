@@ -15,7 +15,7 @@ function ScrollToDesigns() {
         clouds.removeAttribute('style')
         wrapper.removeAttribute('style')
 
-        window.scrollTo({ top: 1420, behavior: 'smooth' })
+
 
 
         slider.classList.remove('hide')

@@ -1,12 +1,12 @@
 .clouds-designs{
         
-    $anim-speed-1: 40s;
+    $anim-speed-1: 200s;
 
         &__cloud-1{
             z-index: 1;
 
             position: absolute;
-            margin: 5% 0 70% 0;
+            top: 600px;
         
         
             scale: 0.08;
@@ -17,9 +17,9 @@
         
             animation: cloud-designs-Move1 $anim-speed-1 infinite linear;
             @keyframes cloud-designs-Move1 {
-                from {right: 300px; }
-                50% {right: 200px;}
-                to {right: 300px; }
+                from {right: -100px; }
+                50% {right: -400px;}
+                to {right: -100px; }
             }
         
         
@@ -29,7 +29,7 @@
             z-index: 1;
         
             position: absolute;
-            margin: 5% 0 10% 10%;
+            margin: 0 0 10% 0;
         
             scale: 0.38;
            
@@ -39,9 +39,9 @@
         
             animation: cloud-designs-Move2 $anim-speed-1 infinite linear;
             @keyframes cloud-designs-Move2 {
-                from {right: 1200px; }
-                50% {right: 1100px;}
-                to {right: 1200px; }
+                from {right: 600px; }
+                50% {right: -300px;}
+                to {right: 600px; }
             }
         
         
@@ -61,9 +61,9 @@
         
             animation: cloud-designs-Move3 $anim-speed-1 infinite linear;
             @keyframes cloud-designs-Move3 {
-                from {right: -100px; }
-                50% {right: -200px;}
-                to {right: -100px; }
+                from {right: -400px; }
+                50% {right: -700px;}
+                to {right: -400px; }
             }
         
         
