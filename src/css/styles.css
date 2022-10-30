@@ -88,7 +88,9 @@ a {
 }
 .main-container__title {
   z-index: 3;
-  margin: 0 0 250px 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   text-align: center;
   font-size: 1rem;
   line-height: 5rem;
@@ -662,15 +664,15 @@ a {
   top: 600px;
   scale: 0.08;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-designs-Move1 200s infinite linear;
-          animation: cloud-designs-Move1 200s infinite linear;
+  -webkit-animation: cloud-designs-Move1 100s infinite linear;
+          animation: cloud-designs-Move1 100s infinite linear;
 }
 @-webkit-keyframes cloud-designs-Move1 {
   from {
     right: -100px;
   }
   50% {
-    right: -400px;
+    right: -800px;
   }
   to {
     right: -100px;
@@ -681,7 +683,7 @@ a {
     right: -100px;
   }
   50% {
-    right: -400px;
+    right: -800px;
   }
   to {
     right: -100px;
@@ -693,15 +695,15 @@ a {
   margin: 0 0 10% 0;
   scale: 0.38;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-designs-Move2 200s infinite linear;
-          animation: cloud-designs-Move2 200s infinite linear;
+  -webkit-animation: cloud-designs-Move2 100s infinite linear;
+          animation: cloud-designs-Move2 100s infinite linear;
 }
 @-webkit-keyframes cloud-designs-Move2 {
   from {
     right: 600px;
   }
   50% {
-    right: -300px;
+    right: -100px;
   }
   to {
     right: 600px;
@@ -712,7 +714,7 @@ a {
     right: 600px;
   }
   50% {
-    right: -300px;
+    right: -100px;
   }
   to {
     right: 600px;
@@ -723,15 +725,15 @@ a {
   position: absolute;
   scale: 0.18;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-designs-Move3 200s infinite linear;
-          animation: cloud-designs-Move3 200s infinite linear;
+  -webkit-animation: cloud-designs-Move3 100s infinite linear;
+          animation: cloud-designs-Move3 100s infinite linear;
 }
 @-webkit-keyframes cloud-designs-Move3 {
   from {
     right: -400px;
   }
   50% {
-    right: -700px;
+    right: -1100px;
   }
   to {
     right: -400px;
@@ -742,7 +744,7 @@ a {
     right: -400px;
   }
   50% {
-    right: -700px;
+    right: -1100px;
   }
   to {
     right: -400px;
@@ -793,6 +795,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  overflow: hidden;
 }
 .slider__item {
   z-index: 3;
