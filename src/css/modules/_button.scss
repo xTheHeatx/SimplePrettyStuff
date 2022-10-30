@@ -6,8 +6,8 @@
     margin: 40px 0 0 0;
     
     z-index: 4;
-    width: 90px;
-    height: 90px;
+    width: 40px;
+    height: 40px;
 
     border: none;
     outline: none;
@@ -52,8 +52,8 @@
         background-size: 400%;
         z-index: 4;
         filter: blur(2px);
-        width: 86px;
-        height: 86px;
+        width: 36px;
+        height: 36px;
         animation: glowing 20s linear infinite;
         opacity: 0;
         transition: opacity .3s ease-in-out;
@@ -78,8 +78,8 @@
         z-index: -1;
         content: '';
         position: absolute;
-        width: 90px;
-    height: 90px;
+        width: 40px;
+    height: 40px;
         background: #fffae8;
         left: 0;
         top: 0;

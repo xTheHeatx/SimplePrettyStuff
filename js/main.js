@@ -12,7 +12,7 @@ import ScrollToTop from "./ScrollToTop.js"
 import renderHeaderWithDelay from "./renderHeaderWithDelay.js"
 
 
-import swiper from "./swiper.js"
+
 
 
 
@@ -50,4 +50,3 @@ ScrollToTop()
 renderHeaderWithDelay('sun', 'body', 'afterbegin')//buttonId, divId, whereToPast                      HEADER
 
 
-swiper()

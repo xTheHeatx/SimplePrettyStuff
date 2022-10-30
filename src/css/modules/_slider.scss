@@ -1,66 +1,3 @@
-.main-container {
-    z-index: 0;
-    
-    
-    // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
-    background-image: url('/src/img/bg-1-1.png');
-    
-    
-    
-    transition: $transition4;
-    overflow: hidden;
-    
-    animation: main-bg-fx 15s infinite linear ;
-    @keyframes main-bg-fx {
-        from {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px); background-position-x: -700px; background-position-y: -100px;}
-        50% {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 10000px); background-position-x: 50px;background-position-y: 50px;}
-        to {background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px); background-position-x: -700px;background-position-y: -100px;}
-    }
-    
-    
-    &__wrapper {
-        
-        
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        
-        overflow: hidden;
-        
-    }
-    
-    &__title-1{
-        
-        margin: 200px 0 0 0;
-        
-        text-align: center;
-        font-size: 4rem;
-        
-        color: $title-color-3;
-        letter-spacing: 2px;
-        
-        text-shadow: 0px 1px 20px rgba($color: #000000, $alpha: 0.2 );
-    }
-
-    &__title{
-        z-index: 3;
-        
-        margin: 0 0 250px 0;
-        
-        text-align: center;
-        font-size: 4rem;
-        
-        color: $title-color-3;
-        letter-spacing: 2px;
-        
-        text-shadow: 0px 1px 20px rgba($color: #000000, $alpha: 0.2 );
-    }
-    
-}
-
 .slider{
     
     
@@ -99,6 +36,7 @@
     &__wrapper{
         
         margin: 0 0 250px 0;
+        max-width: 600px;
         
         
         display: flex;
@@ -106,7 +44,7 @@
         justify-content: center;
         flex-wrap: wrap;
         
-        transition: $transition !important;
+        transition: $transition;
 
         
 
@@ -118,15 +56,19 @@
     
     
     &__item{
-        
+
+       
         z-index: 3;
         
         margin: 30px;
     
-        height: 200px !important;
-        width: 350px !important;
+        height: 100px !important;
+        width: 200px !important;
 
-    
+        
+
+
+       
 
         display: flex;
         justify-content: center;
@@ -141,10 +83,12 @@
 
         transition: $transition;
 
+        
+
 
         &:hover{
             
-            transform: scale(1.2);
+            transform: scale(1.2) !important;
            
             animation: card-halo 3s infinite ease-in-out;
 
@@ -167,9 +111,13 @@
 
     &__link-1{
 
+        
+
 
         height: 200px !important;
         width: 350px !important;
+
+       
 
         background-image: url('https://drive.google.com/uc?export=view&id=1-tyc_XtkUswyqYHlFGXYZ6raN_fqYx6R');
         background-size: 100%;
@@ -182,8 +130,13 @@
         
         
     }
+
+  
     
     &__link-2{
+       
+
+       
 
 
         height: 200px !important;

@@ -4,7 +4,7 @@
     
     &__wrapper {
         
-        height: 75px;
+        height: 50px;
 
         display: flex;
         align-items: center;
@@ -31,10 +31,9 @@
         max-width: 150px;
 
         text-align: center;
-        font-size: calc( (100vw - 480px)/(1920 - 480) * (24 - 16) + 12px);
-        line-height: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 2.2rem;
         color: $title-color-2;
-        letter-spacing: 1px;
       
         transition: $transition;
 
