@@ -11,6 +11,8 @@ import ScrollToTop from "./ScrollToTop.js"
 
 import renderHeaderWithDelay from "./renderHeaderWithDelay.js"
 
+import menuOpen from "./menuOpen.js"
+
 
 
 
@@ -43,6 +45,7 @@ parallaxScrollDIV('.cloud-9')
 ScrollToDesigns()
 ScrollToAbout()
 ScrollToTop()
+menuOpen()
 
 
 
