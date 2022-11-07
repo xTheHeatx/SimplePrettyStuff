@@ -1,41 +1,29 @@
 .slider{
     
     
-    margin: 30% 0 0 0 ;
-    padding: 500px 0 0 0;
-    
+   
     
 
-    background-image: url('/src/img/bg-1.png');
-    // background-image: url('https://drive.google.com/uc?export=view&id=1-tAmDY4L4izaSg8CvB3W8ORWshGgMYUI');
     
-    background-size:calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 12000px);
+    
     
     
     transition: $transition4;
-    overflow: hidden;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
     
     
-    overflow: hidden;
+    
+    
+
 
    
-    animation: slider-bg-fx 4s infinite linear ;
-    @keyframes slider-bg-fx {
-        from {background-position: -200px 30px; }
-        50% {background-position: 0 0}
-        to {background-position: -200px 30px}
-    }
-
+    
 
     
     
     &__wrapper{
         
-        margin: 0 0 250px 0;
+        margin: 0 0 20px 0;
         
         max-width: 600px;
         
@@ -59,53 +47,30 @@
     &__item{
 
        
-        z-index: 3;
         
-        margin: 30px;
+        
+        
     
-        height: 120px !important;
-        width: 200px !important;
+        
 
         
 
 
        
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
 
         
 
         overflow: hidden;
-        border-radius: 10px;
-
-        box-shadow: 0px 1px 20px rgba($color: #000000, $alpha: 0.1 );
+       
 
         transition: $transition;
 
         
 
 
-        &:hover{
-            
-            transform: scale(1.2) !important;
-           
-            animation: card-halo 3s infinite ease-in-out;
-
-            @keyframes card-halo {
-                
-                
-                
-                
-                from {box-shadow: 0px 8px 60px rgba($color: #ffffff, $alpha: 0) ;}
-                15% {box-shadow: 0px 8px 60px rgba($color: #ffffff, $alpha: 0.5) ;}
-                80% {box-shadow: 0px 2px 10px rgba($color: #000000, $alpha: 0.5) ;}
-                to {box-shadow: 0px 2px 5px rgba($color: #ffffff, $alpha: 0) ;}
-                
-            }
-            
-        }
+        
     
     }
 
@@ -120,9 +85,7 @@
 
        
 
-        background-image: url('https://drive.google.com/uc?export=view&id=1-tyc_XtkUswyqYHlFGXYZ6raN_fqYx6R');
-        background-size: 100%;
-
+        
         border-radius: 10px;
 
         transition: $transition3;
@@ -140,12 +103,8 @@
        
 
 
-        height: 200px !important;
-        width: 350px !important;
-
-        background-image: url('https://drive.google.com/uc?export=view&id=1-t3nX4dh0ZuJ2-TQIm7L7AYz41_XGk5r');
-        background-size: 100%;
-
+       
+       
         border-radius: 10px;
 
         transition: $transition3;
@@ -158,11 +117,8 @@
     &__link-3{
 
 
-        height: 200px !important;
-        width: 350px !important;
 
-        background-image: url('https://drive.google.com/uc?export=view&id=1-tZT16zYOdaSTgFdoAD2LnBGhLbUph98');
-        background-size: 100%;
+       
 
         border-radius: 10px;
 

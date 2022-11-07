@@ -1,73 +1,8 @@
 .clouds-designs{
         
-    $anim-speed-1: 100s;
+    
 
-        &__cloud-1{
-            z-index: 1;
-
-            position: absolute;
-            top: 600px;
         
-        
-            scale: 0.08;
-           
-        
-        
-            transition: $transition5;
-        
-            animation: cloud-designs-Move1 $anim-speed-1 infinite linear;
-            @keyframes cloud-designs-Move1 {
-                from {right: -100px; }
-                50% {right: -800px;}
-                to {right: -100px; }
-            }
-        
-        
-        }
-        
-        &__cloud-2{
-            z-index: 1;
-        
-            position: absolute;
-            margin: 0 0 10% 0;
-        
-            scale: 0.38;
-           
-        
-        
-            transition: $transition5;
-        
-            animation: cloud-designs-Move2 $anim-speed-1 infinite linear;
-            @keyframes cloud-designs-Move2 {
-                from {right: 600px; }
-                50% {right: -100px;}
-                to {right: 600px; }
-            }
-        
-        
-        }
-
-        &__cloud-3{
-            z-index: 1;
-        
-            position: absolute;
-            
-        
-            scale: 0.18;
-           
-        
-        
-            transition: $transition5;
-        
-            animation: cloud-designs-Move3 $anim-speed-1 infinite linear;
-            @keyframes cloud-designs-Move3 {
-                from {right: -400px; }
-                50% {right: -1100px;}
-                to {right: -400px; }
-            }
-        
-        
-        }
         
     
     }

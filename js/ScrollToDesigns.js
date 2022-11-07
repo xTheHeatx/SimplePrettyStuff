@@ -5,8 +5,14 @@ function ScrollToDesigns() {
 
 
     button.addEventListener('click', () => {
-
         const slider = document.getElementById('slider')
+
+        if (slider.classList.contains('rendered')) {
+
+            return window.scrollTo({ top: 1495, behavior: 'smooth' })
+
+        }
+
         const clouds = document.getElementById('clouds')
         const container = document.getElementById('container')
         const wrapper = document.getElementById('wrapper')
@@ -23,7 +29,7 @@ function ScrollToDesigns() {
         slider.classList.add('rendered')
 
 
-        window.scrollTo({ top: 1420, behavior: 'smooth' })
+        window.scrollTo({ top: 1800, behavior: 'smooth' })
 
 
 

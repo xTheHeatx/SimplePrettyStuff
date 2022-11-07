@@ -34,25 +34,7 @@ a {
   height: 5%;
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
-  -webkit-animation: main-bg-fx 15s infinite linear;
-          animation: main-bg-fx 15s infinite linear;
-}
-@-webkit-keyframes main-bg-fx {
-  from {
-    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
-    background-position-x: -700px;
-    background-position-y: -100px;
-  }
-  50% {
-    background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
-    background-position-x: 50px;
-    background-position-y: 50px;
-  }
-  to {
-    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
-    background-position-x: -700px;
-    background-position-y: -100px;
-  }
+  animation: main-bg-fx 15s infinite linear;
 }
 @keyframes main-bg-fx {
   from {
@@ -88,8 +70,7 @@ a {
 }
 .main-container__title {
   z-index: 3;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
+  margin: 0 20% 0 0;
   max-width: fit-content;
   text-align: center;
   font-size: 1rem;
@@ -120,22 +101,7 @@ a {
   position: relative;
   border-radius: 60px;
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
-  -webkit-animation: pop-btn 2.5s infinite ease-in-out;
-          animation: pop-btn 2.5s infinite ease-in-out;
-}
-@-webkit-keyframes pop-btn {
-  from {
-    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.1);
-  }
-  15% {
-    box-shadow: 0px 1px 10px white;
-  }
-  95% {
-    box-shadow: 0px 1px 10px rgba(94, 55, 11, 0.3);
-  }
-  to {
-    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0);
-  }
+  animation: pop-btn 2.5s infinite ease-in-out;
 }
 @keyframes pop-btn {
   from {
@@ -158,7 +124,6 @@ a {
   z-index: 4;
 }
 .header__wrapper {
-  transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
   width: 180px;
   height: 500px;
   display: flex;
@@ -200,22 +165,7 @@ a {
   position: relative;
   border-radius: 60px;
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
-  -webkit-animation: shadow 2s infinite ease-in-out;
-          animation: shadow 2s infinite ease-in-out;
-}
-@-webkit-keyframes shadow {
-  from {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0.1);
-  }
-  15% {
-    box-shadow: 2px 2px 60px white;
-  }
-  95% {
-    box-shadow: 0px 5px 50px rgba(94, 55, 11, 0.3);
-  }
-  to {
-    box-shadow: 0px 8px 90px rgba(255, 255, 255, 0);
-  }
+  animation: shadow 2s infinite ease-in-out;
 }
 @keyframes shadow {
   from {
@@ -232,19 +182,7 @@ a {
   }
 }
 .def-button:hover {
-  -webkit-animation: button-scale 1s infinite ease-in-out;
-          animation: button-scale 1s infinite ease-in-out;
-}
-@-webkit-keyframes button-scale {
-  0% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
+  animation: button-scale 1s infinite ease-in-out;
 }
 @keyframes button-scale {
   0% {
@@ -268,8 +206,7 @@ a {
   filter: blur(2px);
   width: 36px;
   height: 36px;
-  -webkit-animation: glowing 20s linear infinite;
-          animation: glowing 20s linear infinite;
+  animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 60px;
@@ -293,17 +230,6 @@ a {
   left: 0;
   top: 0;
   border-radius: 60px;
-}
-@-webkit-keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
 }
 @keyframes glowing {
   0% {
@@ -335,19 +261,7 @@ a {
   right: 700px;
   scale: 0.5;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-1-Move 20s infinite linear;
-          animation: cloud-1-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-1-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-1-Move 20s infinite linear;
 }
 @keyframes cloud-1-Move {
   from {
@@ -368,19 +282,7 @@ a {
   right: -200px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-2-Move 20s infinite linear;
-          animation: cloud-2-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-2-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-2-Move 20s infinite linear;
 }
 @keyframes cloud-2-Move {
   from {
@@ -401,19 +303,7 @@ a {
   right: -700px;
   scale: 0.5;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-3-Move 20s infinite linear;
-          animation: cloud-3-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-3-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-3-Move 20s infinite linear;
 }
 @keyframes cloud-3-Move {
   from {
@@ -434,19 +324,7 @@ a {
   right: -600px;
   scale: 0.8;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-4-Move 20s infinite linear;
-          animation: cloud-4-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-4-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-4-Move 20s infinite linear;
 }
 @keyframes cloud-4-Move {
   from {
@@ -467,19 +345,7 @@ a {
   right: 300px;
   scale: 1;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-5-Move 20s infinite linear;
-          animation: cloud-5-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-5-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-5-Move 20s infinite linear;
 }
 @keyframes cloud-5-Move {
   from {
@@ -500,19 +366,7 @@ a {
   right: -600px;
   scale: 0.7;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-6-Move 20s infinite linear;
-          animation: cloud-6-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-6-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-6-Move 20s infinite linear;
 }
 @keyframes cloud-6-Move {
   from {
@@ -533,19 +387,7 @@ a {
   right: 700px;
   scale: 0.7;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-7-Move 20s infinite linear;
-          animation: cloud-7-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-7-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-7-Move 20s infinite linear;
 }
 @keyframes cloud-7-Move {
   from {
@@ -566,19 +408,7 @@ a {
   right: 100px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-8-Move 20s infinite linear;
-          animation: cloud-8-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-8-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-8-Move 20s infinite linear;
 }
 @keyframes cloud-8-Move {
   from {
@@ -599,19 +429,7 @@ a {
   right: 900px;
   scale: 0.6;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-9-Move 20s infinite linear;
-          animation: cloud-9-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-9-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-9-Move 20s infinite linear;
 }
 @keyframes cloud-9-Move {
   from {
@@ -632,19 +450,7 @@ a {
   right: 400px;
   scale: 0.4;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-10-Move 20s infinite linear;
-          animation: cloud-10-Move 20s infinite linear;
-}
-@-webkit-keyframes cloud-10-Move {
-  from {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  50% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+  animation: cloud-10-Move 20s infinite linear;
 }
 @keyframes cloud-10-Move {
   from {
@@ -664,19 +470,7 @@ a {
   top: 600px;
   scale: 0.08;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-designs-Move1 100s infinite linear;
-          animation: cloud-designs-Move1 100s infinite linear;
-}
-@-webkit-keyframes cloud-designs-Move1 {
-  from {
-    right: -100px;
-  }
-  50% {
-    right: -800px;
-  }
-  to {
-    right: -100px;
-  }
+  animation: cloud-designs-Move1 100s infinite linear;
 }
 @keyframes cloud-designs-Move1 {
   from {
@@ -695,19 +489,7 @@ a {
   margin: 0 0 10% 0;
   scale: 0.38;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-designs-Move2 100s infinite linear;
-          animation: cloud-designs-Move2 100s infinite linear;
-}
-@-webkit-keyframes cloud-designs-Move2 {
-  from {
-    right: 600px;
-  }
-  50% {
-    right: -100px;
-  }
-  to {
-    right: 600px;
-  }
+  animation: cloud-designs-Move2 100s infinite linear;
 }
 @keyframes cloud-designs-Move2 {
   from {
@@ -725,19 +507,7 @@ a {
   position: absolute;
   scale: 0.18;
   transition: all 100ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: cloud-designs-Move3 100s infinite linear;
-          animation: cloud-designs-Move3 100s infinite linear;
-}
-@-webkit-keyframes cloud-designs-Move3 {
-  from {
-    right: -400px;
-  }
-  50% {
-    right: -1100px;
-  }
-  to {
-    right: -400px;
-  }
+  animation: cloud-designs-Move3 100s infinite linear;
 }
 @keyframes cloud-designs-Move3 {
   from {
@@ -759,22 +529,11 @@ a {
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  -webkit-animation: slider-bg-fx 4s infinite linear;
-          animation: slider-bg-fx 4s infinite linear;
-}
-@-webkit-keyframes slider-bg-fx {
-  from {
-    background-position: -200px 30px;
-  }
-  50% {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -200px 30px;
-  }
+  animation: slider-bg-fx 4s infinite linear;
 }
 @keyframes slider-bg-fx {
   from {
@@ -788,7 +547,7 @@ a {
   }
 }
 .slider__wrapper {
-  margin: 0 0 250px 0;
+  margin: 0 0 20px 0;
   max-width: 600px;
   display: flex;
   align-items: center;
@@ -812,22 +571,7 @@ a {
 }
 .slider__item:hover {
   transform: scale(1.2) !important;
-  -webkit-animation: card-halo 3s infinite ease-in-out;
-          animation: card-halo 3s infinite ease-in-out;
-}
-@-webkit-keyframes card-halo {
-  from {
-    box-shadow: 0px 8px 60px rgba(255, 255, 255, 0);
-  }
-  15% {
-    box-shadow: 0px 8px 60px rgba(255, 255, 255, 0.5);
-  }
-  80% {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-  }
-  to {
-    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0);
-  }
+  animation: card-halo 3s infinite ease-in-out;
 }
 @keyframes card-halo {
   from {
@@ -878,25 +622,7 @@ a {
   background-image: url("/src/img/bg-1-1.png");
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) !important;
   overflow: hidden;
-  -webkit-animation: about-bg-fx 15s infinite linear;
-          animation: about-bg-fx 15s infinite linear;
-}
-@-webkit-keyframes about-bg-fx {
-  from {
-    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
-    background-position-x: -700px;
-    background-position-y: 100px;
-  }
-  50% {
-    background-size: calc((100vw - 480px) / 800 * 8 + 10000px);
-    background-position-x: 50px;
-    background-position-y: 90px;
-  }
-  to {
-    background-size: calc((100vw - 480px) / 800 * 8 + 12000px);
-    background-position-x: -700px;
-    background-position-y: 100px;
-  }
+  animation: about-bg-fx 15s infinite linear;
 }
 @keyframes about-bg-fx {
   from {
